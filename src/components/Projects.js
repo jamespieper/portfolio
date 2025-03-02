@@ -38,6 +38,18 @@ function Projects() {
         techs: ["Angular", "Express", "Node.js", "MongoDB"]
     }
 
+    const project4 = {
+
+        name: "Snake (download)",
+        role: "Solo Developer",
+        desc: "An emulation of the popular game \"Snake\". Use arrow keys to collect pellets to grow as large as possible.",
+        landingSrc: "/images/snake.JPG",
+        link: "/snake/Snake.jar",
+        github: "https://github.com/jamespieper/Snake/",
+        techs: ["Java", "Swing"]
+
+    }
+
 
     return (
         
@@ -59,6 +71,10 @@ function Projects() {
 
                     <div>
                         <Project proj={project3} />
+                    </div>
+
+                    <div>
+                        <Project proj={project4} />
                     </div>
 
 
