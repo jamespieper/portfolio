@@ -1,0 +1,117 @@
+.project-card {
+    display: flex;
+
+    justify-content: space-between;
+    background-color: transparent;
+    margin-bottom: 100px;
+
+    
+}
+
+
+.project-info {
+    
+    
+    
+
+}
+
+.project-info h4 {
+    display: inline;
+    color: white;
+    font-size: 32px;
+
+    padding-bottom: 5px;
+    transition-duration: 0.4s;
+    
+}
+
+.project-info h4:hover {
+    background-color: rgb(58, 58, 58);
+
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    
+    
+}
+
+.project-info a {
+    color:white;
+}
+
+
+.project-info h5 {
+    color: darkgrey;
+    font-size: 16px;
+
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.project-info p {
+    color: white;
+    text-wrap: y;
+
+    margin-right: 100px;
+}
+
+.project-image {
+    display: flex;
+    justify-content: flex-end;
+
+    border: 3px solid white;
+    border-radius: 5px;
+
+    transition: all ease 500ms;
+}
+
+.project-image:hover {
+
+    
+
+    transform: scale(1.4);
+    transition: all ease 500ms;
+}
+
+
+.project-card img {
+    
+    width: 30rem;
+    
+    
+}
+
+.project-card img:hover {
+    
+}
+
+
+
+
+.project-info button {
+
+    font-size: 12px;
+    background-color: rgb(30, 30, 30);
+
+    border: 1px solid #fde06a;
+    color: #fde06a;
+    border-radius: 12px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.project-github-link {
+
+    margin-left: 10px;
+}
+
+.project-github-link:hover {
+
+    color:#6e5494;
+
+    
+    transition: all ease 200ms;
+}

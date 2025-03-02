@@ -1,0 +1,58 @@
+.project-container {
+    /* background-color: rgb(39, 39, 39); */
+
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    background-image: linear-gradient(32deg,
+            rgba(31, 31, 31, 0.74) 30px,
+            transparent);
+    background-size: 60px 60px;
+    background-position: -5px -5px;
+}
+
+#projects-title {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.project-list {
+    width: 50%;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.project-list div {
+    
+     
+}
+
+.proj:nth-child(odd) {
+    /* transform: translateX(50px); */
+    left: -50px;
+}
+
+
+
+.proj:nth-child(even) {
+    /* transform: translateX(-50px); */
+    left: 50px
+
+}
+
+
+
+.curves {
+    transform: rotate(180deg);
+
+
+}
+
+
+.curves svg {
+    background-color: transparent;
+}

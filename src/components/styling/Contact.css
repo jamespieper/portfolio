@@ -1,0 +1,94 @@
+.contact {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.contact h1 {
+    padding: 40px;
+}
+
+.contact-container {
+    text-align: center;
+    background-color: #06090e;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 30px;
+    color:white;
+
+    
+    
+}
+
+.contact-form-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-form-container h6{
+    
+    padding: 10px 0 0 0;
+}
+
+.contact-form-container input{
+    
+    background-color: #3b4956;
+
+    padding:10px;
+
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.contact-form-container input:focus{
+    
+    background-color: rgb(96, 105, 113);
+
+    outline: 0;
+
+    border: 2px solid #fde06a;
+
+    transition: 0.3s;
+
+    
+    
+    
+}
+
+
+.contact-message {
+    background-color: #3b4956;
+    width: 500px;
+    height:200px;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.contact-message:focus {
+    background-color: rgb(96, 105, 113);
+    outline: 0;
+    border: 3px solid #fde06a;
+}
+
+.contact-submit {
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 50px 10px 50px;
+    background-color: transparent !important;
+}
+
+
+
+.contact-socials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.social-icon {
+    margin-left: 40px;
+}
+

@@ -1,0 +1,171 @@
+.about-container {
+    background-color: #e8ecef;
+}
+
+.about-content {
+    display: flex;
+    width: 60%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.about-picture {
+    display: flex;
+    padding: 40px;
+}
+
+.about-picture img {
+
+    width: 300px;
+
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about-info {
+
+    padding: 40px;
+
+
+}
+
+.about-info h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about-info p {
+    font-size: 24px;
+    margin-bottom: 40px;
+
+    color: rgb(53, 53, 49);
+
+}
+
+.about-info a {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 20%;
+
+
+    color: rgb(53, 53, 49);
+    border-bottom: 1px solid black;
+
+    text-decoration: none;
+
+    transition-duration: 0.4s;
+
+
+
+}
+
+.about-info a:hover {
+    background-color: rgb(53, 53, 49);
+    color: #fde06a;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    width: 25%;
+
+}
+
+
+
+
+
+/*** CAROUSEL *****/
+
+
+.slider-container {
+    display: flex;
+    background: #e8ecef;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* set scroll animation */
+/* RULES: calc(${width of slide-item + margin left + margin right}px * ${total slide-item}) */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-280px * 4));
+    }
+}
+
+.slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 75%;
+
+    
+    /* You can adjust or delete this line */
+}
+
+/* RULES: calc(${width of slide-item + margin left + margin right}px * ${(total slide)*2}) */
+.slide-track {
+    display: flex;
+    width: calc(280px * 8);
+}
+
+.slide-track.left {
+    animation: scroll-left 10s linear infinite;
+    
+    /* You can set the time to any number of seconds */
+}
+
+
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide-item {
+    width: fit-content;
+    margin: 15px;
+    border-radius: 5px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    /* Added transition for smooth effect */
+
+    text-align: center;
+
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+
+    font-size: 14px;
+    font-weight: 500px;
+
+    white-space: nowrap;
+    letter-spacing: 3px;
+}
+
+.slide-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.678);
+}
+
+@media only screen and (max-width: 600px) {
+    .slider {
+        width: 100vw;
+    }
+}
